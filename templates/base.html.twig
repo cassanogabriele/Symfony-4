@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Professional profiles{% endblock %}</title>		
+            
+        {% block stylesheets %}
+		<!-- GENERAL TEMPLATE CSS -->
+		<link rel="stylesheet" href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{ asset('/vendor/css/1-col-portfolio.css') }}">		
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 		
+		<link rel="stylesheet" href="{{ asset('/vendor/css/style.css') }}"> 
+		<!-- PORTFOLIO -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">	
+		<link rel="stylesheet" type="text/css" href="{{ asset('/vendor/css/elastic_grid.min.css')}}" />
+		<!-- LITY CSS INCLUSION -->
+		<link rel="stylesheet" href="{{ asset('/vendor/css/lity.css') }}"> 
+		<!-- ANIMATE CSS INCLUSION -->
+		<link rel="stylesheet" href="animate.min.css">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<style>
+        .sf-toolbar {
+            display: none !important;
+        }
+		</style>
+		<!-- BOOSTRAP JS INCLUSION -->
+		<script src="{{ asset('/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+		<!-- JQUERY JS INCLUSION -->
+		<script src="{{ asset('/vendor/jquery/jquery-3.2.1.slim.min.js') }}"></script>
+		<!-- PERSONAL SCRIPTS INCLUSION -->		
+		<script src="{{ asset('/vendor/jquery/scripts.js') }}"></script>	
+		<!-- LITY JS INCLUSION -->
+		<script src="{{ asset('/vendor/jquery/lity.js') }}"></script>
+		{% endblock %}
+    </head>
+    <body>
+		<div class="collapse navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Men Collection</li>                            
+                            <div id="menCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Features</li>
+							<li><a href="#">Auto Carousel</a></li>
+                            <li><a href="#">Carousel Control</a></li>
+                            <li><a href="#">Left & Right Navigation</a></li>
+							<li><a href="#">Four Columns Grid</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Fonts</li>
+                            <li><a href="#">Glyphicon</a></li>
+							<li><a href="#">Google Fonts</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Plus</li>
+							<li><a href="#">Navbar Inverse</a></li>
+							<li><a href="#">Pull Right Elements</a></li>
+							<li><a href="#">Coloured Headers</a></li>                            
+							<li><a href="#">Primary Buttons & Default</a></li>							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Much more</li>
+                            <li><a href="#">Easy to Customize</a></li>
+							<li><a href="#">Calls to action</a></li>
+							<li><a href="#">Custom Fonts</a></li>
+							<li><a href="#">Slide down on Hover</a></li>                         
+						</ul>
+					</li>
+				</ul>				
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Features</li>
+							<li><a href="#">Auto Carousel</a></li>
+                            <li><a href="#">Carousel Control</a></li>
+                            <li><a href="#">Left & Right Navigation</a></li>
+							<li><a href="#">Four Columns Grid</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Fonts</li>
+                            <li><a href="#">Glyphicon</a></li>
+							<li><a href="#">Google Fonts</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Plus</li>
+							<li><a href="#">Navbar Inverse</a></li>
+							<li><a href="#">Pull Right Elements</a></li>
+							<li><a href="#">Coloured Headers</a></li>                            
+							<li><a href="#">Primary Buttons & Default</a></li>							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Much more</li>
+                            <li><a href="#">Easy to Customize</a></li>
+							<li><a href="#">Calls to action</a></li>
+							<li><a href="#">Custom Fonts</a></li>
+							<li><a href="#">Slide down on Hover</a></li>                         
+						</ul>
+					</li>
+                    <li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Women Collection</li>                            
+                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>				
+			</li>
+            <li><a href="#">Store locator</a></li>
+		</ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">My cart (0) items</a></li>
+      </ul>
+	</div><!-- /.nav-collapse -->
+  </nav>
+</div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Professionnal profiles</a>
+               
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					  <li class="nav-item active">
+						<a class="nav-link" href="/accueil" id="current">Accueil++</a>
+					  </li>
+					  <li class="nav-item active">
+						<a class="nav-link" href="/profils" id="current">Profils</a>
+					  </li>
+					  <li class="nav-item active">
+						<a class="nav-link" href="/profils" id="current">Profils</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="/registration">S'inscrire</a>
+					  </li>					 
+					</ul>
+				</div>
+				 
+  			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container">
+            {% block body %}{% endblock %}		
+        </div>
+		
+		<footer>
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">			   
+				<p class="lead">Tous droits réservés <a href="https://gabriel-cassano.be/">Gabriele Cassano</a></p>				
+				<p style="text-align:center;color:white;"><a href="https://gabriel-cassano.be/ml.html">Mentions légales</a> | <a href="https://gabriel-cassano.be/cgu.html">CGU</a></p>
+			  </div>
+			</div>		
+		</footer>
+
+        <script src="/vendor/jquery/jquery-3.2.1.slim.min.js"></script>
+        <script src="/vendor/popper/popper.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        {% block javascripts %}
+		<script type="text/javascript">
+				$(function(){
+					$("#elastic_grid_demo").elastic_grid({
+						'showAllText' : 'All',
+						'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+						'hoverDirection': true,
+						'hoverDelay': 0,
+						'hoverInverse': false,
+						'expandingSpeed': 500,
+						'expandingHeight': 500,
+						'items' :
+						[
+							{
+								'title'         : 'Web Development',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/1.jpg', 'images/img/small/2.jpg', 'images/img/small/3.jpg', 'images/img/small/10.jpg', 'images/img/small/11.jpg'],
+								'large'         : ['https://www.youtube.com/watch?v=eV-kARtgxkM', 'images/img/large/2.jpg', 'images/img/large/3.jpg', 'images/img/large/10.jpg', 'images/img/large/11.jpg'],
+								'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+								'button_list'   :
+								[
+									
+								],
+								'tags'          : ['Self Portrait']
+							},
+							{
+								'title'         : 'Swiss chard pumpkin',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/4.jpg', 'images/img/small/5.jpg', 'images/img/small/6.jpg', 'images/img/small/7.jpg'],
+								'large'         : ['images/img/large/4.jpg', 'images/img/large/5.jpg', 'images/img/large/6.jpg', 'images/img/large/7.jpg'],
+								'img_title'     : ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Landscape']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/15.jpg','images/img/small/8.jpg', 'images/img/small/9.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/15.jpg','images/img/large/8.jpg', 'images/img/large/9.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Self Portrait', 'Landscape']
+							},
+							{
+								'title'         : 'Aubergine napa cabbage',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/12.jpg', 'images/img/small/13.jpg', 'images/img/small/14.jpg', 'images/img/small/15.jpg', 'images/img/small/16.jpg'],
+								'large'         : ['images/img/large/12.jpg', 'images/img/large/13.jpg', 'images/img/large/14.jpg', 'images/img/large/15.jpg', 'images/img/large/16.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Portrait']
+							},
+							{
+								'title'         : 'Swiss chard pumpkin',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/17.jpg', 'images/img/small/18.jpg', 'images/img/small/19.jpg', 'images/img/small/20.jpg'],
+								'large'         : ['images/img/large/17.jpg', 'images/img/large/18.jpg', 'images/img/large/19.jpg', 'images/img/large/20.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Landscape']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/13.jpg','images/img/small/15.jpg', 'images/img/small/11.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/13.jpg','images/img/large/15.jpg', 'images/img/large/11.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Vintage']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/7.jpg','images/img/small/8.jpg', 'images/img/small/9.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/7.jpg','images/img/large/8.jpg', 'images/img/large/9.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Portrait']
+							},
+							{
+								'title'         : 'Azuki bean',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/16.jpg', 'images/img/small/13.jpg', 'images/img/small/14.jpg', 'images/img/small/15.jpg', 'images/img/small/16.jpg'],
+								'large'         : ['images/img/large/16.jpg', 'images/img/large/13.jpg', 'images/img/large/14.jpg', 'images/img/large/15.jpg', 'images/img/large/16.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'tags'          : ['Vintage']
+							},
+							{
+								'title'         : 'Swiss chard pumpkin',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/18.jpg', 'images/img/small/18.jpg', 'images/img/small/19.jpg', 'images/img/small/20.jpg'],
+								'large'         : ['images/img/large/18.jpg', 'images/img/large/18.jpg', 'images/img/large/19.jpg', 'images/img/large/20.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'tags'          : ['Landscape']
+							},
+							{
+								'title'         : 'Winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/11.jpg','images/img/small/15.jpg', 'images/img/small/11.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/11.jpg','images/img/large/15.jpg', 'images/img/large/11.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'tags'          : ['Portrait']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/3.jpg','images/img/small/15.jpg', 'images/img/small/11.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/3.jpg','images/img/large/15.jpg', 'images/img/large/11.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'tags'          : ['Vintage']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/5.jpg','images/img/small/8.jpg', 'images/img/small/9.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/5.jpg','images/img/large/8.jpg', 'images/img/large/9.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'tags'          : ['Portrait', 'Landscape']
+							},
+							{
+								'title'         : 'Web Development',
+								'description'   : '',
+								'thumbnail'     : ['images/img/small/6.jpg', 'images/img/small/13.jpg', 'images/img/small/14.jpg', 'images/img/small/15.jpg', 'images/img/small/16.jpg'],
+								'large'         : ['images/img/large/6.jpg', 'images/img/large/13.jpg', 'images/img/large/14.jpg', 'images/img/large/15.jpg', 'images/img/large/16.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Vintage']
+							},
+							{
+								'title'         : 'Swiss chard pumpkin',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/8.jpg', 'images/img/small/18.jpg', 'images/img/small/19.jpg', 'images/img/small/20.jpg'],
+								'large'         : ['images/img/large/8.jpg', 'images/img/large/18.jpg', 'images/img/large/19.jpg', 'images/img/large/20.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Landscape']
+							},
+							{
+								'title'         : 'Spinach winter purslane',
+								'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+								'thumbnail'     : ['images/img/small/9.jpg','images/img/small/15.jpg', 'images/img/small/11.jpg', 'images/img/small/10.jpg'],
+								'large'         : ['images/img/large/9.jpg','images/img/large/15.jpg', 'images/img/large/11.jpg', 'images/img/large/10.jpg'],
+								'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+								'button_list'   :
+								[
+									{ 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+									{ 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : true}
+								],
+								'tags'          : ['Vintage', 'Landscape']
+							}
+
+						]
+					});
+				});
+			</script>	
+		{% endblock %}
+    </body>
+</html>

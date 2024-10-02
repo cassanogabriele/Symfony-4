@@ -1,0 +1,26 @@
+.my-4{ font-family: 'Oswald', sans-serif; }
+
+.subtitle{ font-family: 'Oxygen', sans-serif; }
+
+.jumbotron{ 
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: -20px;
+	
+}
+
+.jumbotron a{ text-decoration: none; }
+
+.anime1{
+	 animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+footer{ 
+	font-family: 'Righteous', cursive; 
+}
+
+footer p{ font-size: 25px !important; }
